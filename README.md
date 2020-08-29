@@ -1,6 +1,6 @@
-# js-app-starter
+# vue-app-starter
 
-JavsScript を用いた Vue.js アプリ開発のための個人用スターター
+Vue.js を用いた web アプリ開発のための個人用スターター
 
 ## Description
 
