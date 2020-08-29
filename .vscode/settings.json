@@ -1,0 +1,58 @@
+{
+  "prettier.enable": true,
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[less]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vetur.format.enable": false,
+  "vetur.validation.template": true,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "[vue]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "eslint.validate": ["javascript", "vue"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": false
+  }
+}
