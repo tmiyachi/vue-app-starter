@@ -46,6 +46,7 @@
   "vetur.format.defaultFormatter.html": "prettier",
   "[vue]": {
     "editor.formatOnSave": false,
+    "editor.tabSize": 2,
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     }
