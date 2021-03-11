@@ -1,6 +1,6 @@
 # vue-app-starter
 
-Vue.js を用いた web アプリ開発のための個人用スターター
+Vue.js v3 を用いた web アプリ開発のための個人用スターター
 
 ## Description
 
@@ -8,8 +8,6 @@ Vue.js を用いた web アプリ開発のための個人用スターター
 - ESlint，stylelint による静的コード解析
 - Prettier によるフォーマット
 - Babel によるトランスコンパイル
-
-詳細は <https://www.notion.so/JS-Web-8964358b29714a68898c13399e98435e>
 
 ## Note
 
