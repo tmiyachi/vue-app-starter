@@ -12,7 +12,7 @@ module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2016,
+    ecmaVersion: 2020,
   },
   rules: {
     'vue/html-self-closing': 'off',
