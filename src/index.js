@@ -4,8 +4,11 @@ import App from '@/App.vue';
 
 Vue.config.productionTip = true;
 
-new Vue({
-  render: function (h) {
-    return h(App);
-  },
-}).$mount('#app');
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.createElement('div');
+  document.body.appendChild(el);
+  new Vue({
+    el,
+    render: (h) => h(App),
+  });
+});
