@@ -1,8 +1,23 @@
 {
   "prettier.enable": true,
-  "eslint.enable": true,
   "stylelint.enable": true,
   "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": false
+  },
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "vue"
+  ],
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false
@@ -42,8 +57,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vetur.format.enable": false,
-  "vetur.validation.template": true,
-  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.validation.template": false,
   "[vue]": {
     "editor.formatOnSave": false,
     "editor.tabSize": 2,
@@ -51,9 +65,4 @@
       "source.fixAll.stylelint": true
     }
   },
-  "eslint.validate": ["javascript", "vue"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": false
-  }
 }
