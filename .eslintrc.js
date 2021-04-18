@@ -7,15 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:prettier-vue/recommended',
+    'plugin:prettier/recommended',
   ],
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2020,
-  },
-  rules: {
-    'vue/html-self-closing': 'off',
-    'vue/max-attributes-per-line': 'off',
-  },
+  rules: {},
 };
