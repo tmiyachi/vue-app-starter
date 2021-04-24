@@ -17,19 +17,25 @@ Vue.js v3 を用いた web アプリ開発のための個人用スターター
 
 Install package
 
-```
+```bash
 npm install
 ```
 
 build
 
-```
+```bash
 npm run build
+```
+
+lint
+
+```bash
+npm run lint
 ```
 
 dev
 
-```
+```bash
 npm start
 ```
 
