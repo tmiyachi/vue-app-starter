@@ -3,7 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
@@ -11,9 +11,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
     assetModuleFilename: 'assets/[name][ext]',
-    publicPath: '',
   },
   resolve: {
+    extensions: ['.vue', '.js'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
@@ -56,18 +56,21 @@ module.exports = {
     ],
   },
   plugins: [
-    // 生成先のフォルダを空にする
-    new CleanWebpackPlugin(),
-    // cssファイルをjsファイルにバンドルせず処理するプラグイン
+    new CleanWebpackPlugin({
+      // 削除したくないファイルは!で除外
+      // cleanOnceBeforeBuildPatterns: [
+      //   '**/*',
+      //   '!static-files*',
+      //   '!directoryToExclude/**',
+      // ],
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].bundle.css',
     }),
     new VueLoaderPlugin(),
-    // webpackで生成したjsとcssを読み込んだhtmlを作成
     new HtmlWebpackPlugin({
       title: 'Application Name',
       template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
-  // target: ['web', 'es5'], // for ES5
 };

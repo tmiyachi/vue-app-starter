@@ -14,8 +14,5 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 2020,
   },
-  rules: {
-    'vue/html-self-closing': 'off',
-    'vue/max-attributes-per-line': 'off',
-  },
+  rules: {},
 };
