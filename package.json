@@ -1,7 +1,7 @@
 {
   "name": "vue-app-starter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Starter kit for Vue,js web application",
   "dependencies": {
     "core-js": "^3.19.0",
     "vue": "^2.6.14"
