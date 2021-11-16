@@ -1,11 +1,8 @@
 {
   "prettier.enable": true,
   "stylelint.enable": true,
+  "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": false
-  },
   "eslint.validate": [
     "javascript",
     "vue"
@@ -19,50 +16,52 @@
     "vue"
   ],
   "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
   "[css]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     }
   },
   "[scss]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     }
   },
   "[less]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": true
     }
   },
   "[html]": {
-    "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vetur.format.enable": false,
   "vetur.validation.template": false,
   "[vue]": {
-    "editor.formatOnSave": false,
-    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": true
+      "source.fixAll.stylelint": true,
+      "source.fixAll.eslint": true
     }
   },
 }
