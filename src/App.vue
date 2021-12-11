@@ -4,11 +4,9 @@
 
 <script>
   export default {
-    data() {
-      return {
-        greeting: 'Hello',
-      };
-    },
+    data: () => ({
+      greeting: 'Hello',
+    }),
   };
 </script>
 
