@@ -6,5 +6,7 @@ module.exports = {
     es2020: true,
   },
   extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier'],
-  rules: {},
+  rules: {
+    'consistent-return': 'error',
+  },
 };
